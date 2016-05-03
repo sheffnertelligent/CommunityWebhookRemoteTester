@@ -1,0 +1,21 @@
+﻿@model WebhookTester.Models.Website
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Html.ActionLink("Home", "Index") &raquo; Recent Deliveries for <a href="@Model.Url" target="_blank">@Model.Url</a></h2>
+
+<table>
+@foreach (var item in Model.Deliveries)
+{
+    <tr>
+        <td>
+            <pre class="payload">@item.Data</pre>
+        </td>
+        <td>
+            @item.DeliveryDateUtc.ToLocalTime()
+        </td>
+    </tr>
+}
+</table>

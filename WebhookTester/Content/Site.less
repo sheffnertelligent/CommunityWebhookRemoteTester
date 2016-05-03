@@ -1,0 +1,94 @@
+﻿@telligent-blue: #5793c9;
+@community-blue: rgb(52, 152, 219);
+@white:rgb(255, 255, 255);
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header
+{
+    padding: 1em 1em 1em 1em;
+    background-color: @community-blue;
+    color: @white;
+
+    h1
+    {
+        font-size:2.5em;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    a
+    {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    p
+    {
+        margin:0;
+        font-style:italic;
+    }
+
+    .webhook
+    {
+        position: absolute;
+        top: 0.5em;
+        right: 1em;
+        height: 60px;
+    }
+
+}
+
+.main
+{
+    margin: 0 1em;
+
+    table, th, td
+    {
+        border-collapse:collapse;
+        border:solid 1px black;
+        padding:1em;
+        margin:1em;
+    }
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 1em;
+    margin: 0 auto;
+    clear: both;
+    background-color: #e2e2e2;
+
+    .copy
+    {
+        font-size: .8em;
+        padding-left:1em;
+    }
+
+    .logo
+    {
+        position: fixed;
+        bottom: 0;
+        right: 1em;
+        height: 2.5em;
+    }
+}
+
+pre.payload
+{
+    max-width:800px;
+    overflow:auto;
+}
